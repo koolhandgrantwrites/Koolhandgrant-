@@ -1,16 +1,18 @@
+<!DOCTYPE html>
 
-
-<!DOCTYPE html><html lang="en">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kevin - Writer, Filmmaker, Poet</title>
+    <title>Kevin C. Grant - Writer • Filmmaker • Poet</title>
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
+
+```
     body {
         font-family: 'Playfair Display', 'Georgia', serif;
         line-height: 1.8;
@@ -171,21 +173,6 @@
     
     section {
         margin-bottom: 8rem;
-        opacity: 0;
-        animation: fadeInSection 1s ease forwards;
-        animation-timeline: view();
-        animation-range: entry 0% cover 30%;
-    }
-    
-    @keyframes fadeInSection {
-        from {
-            opacity: 0;
-            transform: translateY(50px);
-        }
-        to {
-            opacity: 1;
-            transform: translateY(0);
-        }
     }
     
     h2 {
@@ -269,6 +256,16 @@
         line-height: 1.9;
         font-size: 1.1rem;
     }
+
+    .work-item a {
+        color: #d4af37;
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+
+    .work-item a:hover {
+        color: #fff;
+    }
     
     .poem-container {
         max-width: 900px;
@@ -295,6 +292,15 @@
         font-size: 6rem;
         color: rgba(212, 175, 55, 0.2);
         font-family: Georgia, serif;
+    }
+
+    .poem-title {
+        color: #d4af37;
+        font-size: 2rem;
+        font-weight: 400;
+        margin-bottom: 2rem;
+        text-align: center;
+        font-style: normal;
     }
     
     footer {
@@ -375,120 +381,177 @@
         }
     }
 </style>
+```
 
 </head>
 <body>
     <header>
-        <h1>Kevin</h1>
+        <h1>Kevin C. Grant</h1>
         <p>Writer • Filmmaker • Poet</p>
         <div class="scroll-indicator"></div>
     </header>
+
+```
 <nav>
     <ul>
-        <li><a href="#writing">Writing</a></li>
-        <li><a href="#filmmaking">Filmmaking</a></li>
+        <li><a href="#book">Book</a></li>
         <li><a href="#poetry">Poetry</a></li>
+        <li><a href="#about">About</a></li>
         <li><a href="#contact">Contact</a></li>
     </ul>
 </nav>
 
 <div class="container">
-    <section id="writing">
-        <h2>Writing</h2>
+    <section id="book">
+        <h2>Published Work</h2>
         <div class="ornament"></div>
-        <p class="section-intro">Exploring the human condition through words, one story at a time. Each piece is a meditation on the spaces between thought and feeling.</p>
+        <p class="section-intro">Exploring love, heartbreak, identity, and the human condition through powerful verse that captures both vulnerability and strength.</p>
         
         <div class="work-grid">
             <div class="work-item">
-                <h3>Essay Title</h3>
-                <p>A brief description of your essay or article. This explores themes of identity, belonging, and the search for meaning in modern life. An examination of how we construct narratives from the fragments of experience.</p>
-            </div>
-            <div class="work-item">
-                <h3>Short Story</h3>
-                <p>Synopsis of your short story. A tale that weaves together past and present, examining how memory shapes our understanding of truth. Set against a backdrop of shifting landscapes and changing seasons.</p>
-            </div>
-            <div class="work-item">
-                <h3>Creative Nonfiction</h3>
-                <p>Description of your creative nonfiction piece. An intimate look at the moments that define us and the choices that shape our paths. A journey through the ordinary made extraordinary.</p>
-            </div>
-        </div>
-    </section>
-    
-    <section id="filmmaking">
-        <h2>Filmmaking</h2>
-        <div class="ornament"></div>
-        <p class="section-intro">Visual storytelling that captures moments, emotions, and the beauty of cinema. Each frame is composed with intention, each cut deliberate.</p>
-        
-        <div class="work-grid">
-            <div class="work-item">
-                <h3>Short Film Title</h3>
-                <p>A compelling narrative exploring themes of isolation and connection in the digital age. Runtime: XX minutes. Screened at [festival/venue]. Shot on 16mm film with a focus on natural light and atmospheric composition.</p>
-            </div>
-            <div class="work-item">
-                <h3>Documentary Project</h3>
-                <p>An intimate portrait of artists at work, examining the intersection of art and life through a unique lens. A meditation on the creative process and the price of devotion to one's craft.</p>
-            </div>
-            <div class="work-item">
-                <h3>Video Essay</h3>
-                <p>A visual exploration of cinema's relationship with memory, blending criticism with creative expression to illuminate new perspectives. Drawing from the masters while forging a distinct voice.</p>
+                <h3>A Thin Line Between Love & Feeling Played</h3>
+                <p>Kevin Grant's debut poetry collection explores the vast and beautiful depth of emotionally navigating life and love, capturing a genuine portrayal of pain, grief, facing crossroads and navigating life transitions, battling survival, tragedy, and uncertainty yet persevering with grit and newfound wisdom from heartbreak.</p>
+                <p style="margin-top: 1.5rem;">This book contains meaningful and beautiful poetry addressing jealousy, miscommunication, cultural commentary, and the joy of vulnerability. Grant's New Orleans roots shine through with soulful depth—a powerful expression of the soul's true authenticity.</p>
+                <p style="margin-top: 1.5rem;"><a href="https://www.amazon.com/Thin-Line-Between-Feeling-Played/dp/B0DT15V98Y/" target="_blank">Available on Amazon →</a></p>
             </div>
         </div>
     </section>
     
     <section id="poetry">
-        <h2>Poetry</h2>
+        <h2>Featured Poems</h2>
         <div class="ornament"></div>
-        <p class="section-intro">Verses that distill emotion into language, seeking truth in rhythm and metaphor. Poetry as a way of seeing, a method of understanding.</p>
+        <p class="section-intro">Selected works from "A Thin Line Between Love & Feeling Played" — verses that speak truth in rhythm and metaphor.</p>
         
         <div class="poem-container">
             <div class="poem">
-                <p><em>Replace this with one of your poems</em></p>
-                <p style="margin-top: 2rem;">
-                    Words flow like water,<br>
-                    Carving paths through stone,<br>
-                    Each line a testament<br>
-                    To moments we've known.<br><br>
-                    
-                    In silence, we find<br>
-                    The space between breath,<br>
-                    Where meaning resides—<br>
-                    Both life and death.
+                <div class="poem-title">Do I, Too, Sing America</div>
+                <p style="margin-top: 2rem; font-style: normal;">
+                    I AM<br>
+                    The big black brother.<br>
+                    cross the street when under lit under streetlights.<br>
+                    CCTV every move I make.<br><br>
+
+                    Monitoring mistook steps to paint a portrait of<br>
+                    Habitual mistakes.<br>
+                    Could you articulate?<br><br>
+
+                    Diction be damned, I keep appearances proper and prim. I stay clean.<br>
+                    Internal conflict makes for external chaos.<br>
+                    Whether serving the country or serving fools.<br><br>
+
+                    Shit talking, and real regardless of the observers.<br>
+                    Which mask today, no need to speculate<br>
+                    -- I assimilate.<br><br>
+
+                    I laugh,<br>
+                    the tears are mistaken for joy.<br><br>
+
+                    Do I, too, sing America?<br><br>
+
+                    Tomorrow is still a day away, I sit at the table, Mr. Hughes, because we make the table.<br>
+                    No one dares tell me, "Eat in the kitchen" now, not to my face.<br><br>
+
+                    Oh baby, but behind my back?<br>
+                    Passive-aggressively questioning, or bypassing me over by overlooking my character,<br>
+                    Have me second-guessing my worth?<br>
+                    All by design.<br><br>
+
+                    what you speak, and your actions never align.<br><br>
+
+                    Do I, too, sing America?<br><br>
+
+                    Where so many have died to help build a dream and died for change.<br>
+                    Sacrificial lambs,<br>
+                    who look just like me, and you.<br><br>
+
+                    For causes greater than us all, but somewhere those legends get lost.<br>
+                    When wars are made, or my help is needed you want me to sing America?<br>
+                    And yet when I need help where is America?<br><br>
+
+                    See how beautiful I am,<br>
+                    See how brilliant I am.<br>
+                    I don't need you to tell me if I sing America because I do<br>
+                    No matter how many of us are slaughtered,<br>
+                    The lives forever meaningful.<br><br>
+
+                    One day you will see,<br>
+                    That I too sing America, because America is me.
+                </p>
+            </div>
+
+            <div class="poem">
+                <div class="poem-title">Look Away</div>
+                <p style="margin-top: 2rem; font-style: normal;">
+                    Everything is in her smile,<br>
+                    My meditations amid the chaotic days bring me there.<br><br>
+
+                    With her full embrace, I hesitate to let go—trying to freeze time and her love all at once.<br>
+                    Fully aware that in moments, we will no longer be who we just were,<br>
+                    Barred from a return there.<br><br>
+
+                    She's gone, so I long to be with her again—hoping that each detached moment grows our love and extends our time.<br><br>
+
+                    Fully aware of that inevitable silence that whisks us away,<br>
+                    Shall the rider of the pale horse remark at a love so beautiful that it is forever impressed<br>
+                    in time, to forever speak—for us,<br>
+                    even without us.
+                </p>
+            </div>
+
+            <div class="poem">
+                <div class="poem-title">Before</div>
+                <p style="margin-top: 2rem; font-style: normal;">
+                    Who were you?<br>
+                    Before the sun stooped down to kiss the ocean,<br>
+                    Giving birth to nights and days,<br>
+                    her pure eyes open to see love for the first time,<br><br>
+
+                    traversing canals through multiple dimensions, and lifetimes<br>
+                    only to emerge in a world with broken wings,<br>
+                    overrun with realness.<br><br>
+
+                    So real that everyone else is phony, yet before this— this —<br>
+                    reality,<br>
+                    in actuality,<br>
+                    lost in a forgotten nook behind my soul,<br><br>
+
+                    I remember you,<br>
+                    the way that you were;<br>
+                    before.<br><br>
+
+                    When you first fell from the sky.
                 </p>
             </div>
         </div>
-        
-        <div class="work-grid">
-            <div class="work-item">
-                <h3>Collection Title</h3>
-                <p>A series of poems exploring themes of loss, renewal, and the quiet power of persistence. Influenced by the confessional poets and contemporary minimalism, this collection finds beauty in restraint.</p>
-            </div>
-            <div class="work-item">
-                <h3>Published Works</h3>
-                <p>Featured in [Literary Magazine], [Journal], and [Publication]. Available to read online and in print. Recent work has appeared in several prestigious journals and anthologies.</p>
-            </div>
-        </div>
+    </section>
+
+    <section id="about">
+        <h2>About</h2>
+        <div class="ornament"></div>
+        <p class="section-intro">Kevin C. Grant is a writer, filmmaker, and poet from New Orleans, now based in Los Angeles. His work explores themes of love, identity, cultural commentary, and the human experience through powerful, honest verse. His debut poetry collection "A Thin Line Between Love & Feeling Played" captures the depth and complexity of navigating life, loss, and the search for meaning.</p>
     </section>
     
     <section id="contact">
         <div class="contact-section">
             <h2>Get in Touch</h2>
             <div class="ornament"></div>
-            <p class="section-intro">I'm always interested in new collaborations, conversations, and creative opportunities. Let's create something meaningful together.</p>
+            <p class="section-intro">Connect with me for collaborations, conversations, and creative opportunities.</p>
             
             <div class="contact-links">
-                <a href="mailto:your.email@example.com">Email</a>
-                <a href="#">Twitter</a>
-                <a href="#">Instagram</a>
-                <a href="#">LinkedIn</a>
+                <a href="mailto:Kevinchristopher16@icloud.com">Email</a>
+                <a href="https://www.instagram.com/koolhandgrantwrites" target="_blank">Instagram</a>
+                <a href="https://www.tiktok.com/@kevin.c.grant" target="_blank">TikTok</a>
+                <a href="https://www.amazon.com/Thin-Line-Between-Feeling-Played/dp/B0DT15V98Y/" target="_blank">Amazon</a>
             </div>
         </div>
     </section>
 </div>
 
 <footer>
-    <p>&copy; 2026 Kevin. All rights reserved.</p>
-    <p style="margin-top: 1rem; font-size: 0.9rem; opacity: 0.6;">Crafted with intention and care.</p>
+    <p>&copy; 2026 Kevin C. Grant. All rights reserved.</p>
+    <p style="margin-top: 1rem; font-size: 0.9rem; opacity: 0.6;">New Orleans roots, Los Angeles grown.</p>
 </footer>
+```
 
 </body>
 </html>
