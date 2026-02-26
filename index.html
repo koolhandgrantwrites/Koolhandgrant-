@@ -1,388 +1,449 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kevin C. Grant - Writer • Filmmaker • Poet</title>
+    
+    <!-- Author & Contact Metadata -->
+    <meta name="author" content="Kevin C. Grant">
+    <meta name="contact" content="Kevinchristopher16@icloud.com">
+    <meta name="description" content="Kevin C. Grant is a writer, filmmaker, and poet from New Orleans, now based in Los Angeles. Author of 'A Thin Line Between Love & Feeling Played.'">
+    <meta name="keywords" content="Kevin C. Grant, poet, writer, filmmaker, screenwriter, A Thin Line Between Love & Feeling Played, New Orleans poet, Los Angeles writer">
+    
+    <!-- Social Media Meta Tags -->
+    <meta property="og:title" content="Kevin C. Grant - Writer • Filmmaker • Poet">
+    <meta property="og:description" content="Published poet, professional screenwriter, and filmmaker. Author of 'A Thin Line Between Love & Feeling Played.'">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://koolhandgrantwrites.github.io/Koolhandgrant-/">
+    
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Kevin C. Grant - Writer • Filmmaker • Poet">
+    <meta name="twitter:description" content="Published poet, professional screenwriter, and filmmaker from New Orleans.">
+    
+    <!-- Structured Data for Author/Person -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Kevin C. Grant",
+      "alternateName": "Kevin Christopher Gillen",
+      "email": "Kevinchristopher16@icloud.com",
+      "jobTitle": "Writer, Filmmaker, Poet",
+      "description": "Published poet, professional screenwriter, and filmmaker from New Orleans, based in Los Angeles.",
+      "url": "https://koolhandgrantwrites.github.io/Koolhandgrant-/",
+      "sameAs": [
+        "https://www.instagram.com/koolhandgrantwrites",
+        "https://www.tiktok.com/@kevin.c.grant",
+        "https://www.amazon.com/Thin-Line-Between-Feeling-Played/dp/B0DT15V98Y/"
+      ],
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Independent"
+      },
+      "alumniOf": "New Orleans",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Los Angeles",
+        "addressRegion": "CA"
+      }
+    }
+    </script>
+    
+    <!-- Book Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Book",
+      "name": "A Thin Line Between Love & Feeling Played",
+      "author": {
+        "@type": "Person",
+        "name": "Kevin C. Grant",
+        "email": "Kevinchristopher16@icloud.com"
+      },
+      "isbn": "B0DT15V98Y",
+      "bookFormat": "Paperback/EBook",
+      "inLanguage": "en-US",
+      "genre": "Poetry",
+      "url": "https://www.amazon.com/Thin-Line-Between-Feeling-Played/dp/B0DT15V98Y/",
+      "description": "Poetry collection exploring love, heartbreak, identity, and the human experience with powerful, honest verse."
+    }
+    </script>
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-
-```
-    body {
-        font-family: 'Playfair Display', 'Georgia', serif;
-        line-height: 1.8;
-        color: #1a1a1a;
-        background: #0a0a0a;
-        overflow-x: hidden;
-    }
-    
-    /* Animated gradient background */
-    body::before {
-        content: '';
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(45deg, #0a0a0a, #1a1a2e, #16213e, #0f3460);
-        background-size: 400% 400%;
-        animation: gradientShift 15s ease infinite;
-        z-index: -1;
-    }
-    
-    @keyframes gradientShift {
-        0% { background-position: 0% 50%; }
-        50% { background-position: 100% 50%; }
-        100% { background-position: 0% 50%; }
-    }
-    
-    /* Grain texture overlay */
-    body::after {
-        content: '';
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="300" height="300"><filter id="noise"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="4" /></filter><rect width="100%" height="100%" filter="url(%23noise)" opacity="0.05"/></svg>');
-        pointer-events: none;
-        z-index: 1;
-        opacity: 0.4;
-    }
-    
-    header {
-        position: relative;
-        min-height: 100vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        padding: 2rem;
-        z-index: 2;
-    }
-    
-    header h1 {
-        font-size: clamp(4rem, 12vw, 8rem);
-        font-weight: 300;
-        letter-spacing: 0.3em;
-        color: #fff;
-        margin-bottom: 2rem;
-        text-transform: uppercase;
-        opacity: 0;
-        animation: fadeInUp 1.5s ease forwards;
-        text-shadow: 0 0 40px rgba(255,255,255,0.2);
-    }
-    
-    @keyframes fadeInUp {
-        to {
-            opacity: 1;
-            transform: translateY(0);
+        
+        body {
+            font-family: 'Playfair Display', 'Georgia', serif;
+            line-height: 1.8;
+            color: #1a1a1a;
+            background: #0a0a0a;
+            overflow-x: hidden;
         }
-        from {
-            opacity: 0;
-            transform: translateY(30px);
+        
+        /* Animated gradient background */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg, #0a0a0a, #1a1a2e, #16213e, #0f3460);
+            background-size: 400% 400%;
+            animation: gradientShift 15s ease infinite;
+            z-index: -1;
         }
-    }
-    
-    header p {
-        font-size: clamp(1.2rem, 3vw, 2rem);
-        color: #d4af37;
-        font-weight: 300;
-        letter-spacing: 0.2em;
-        opacity: 0;
-        animation: fadeInUp 1.5s ease 0.5s forwards;
-    }
-    
-    .scroll-indicator {
-        position: absolute;
-        bottom: 3rem;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 2px;
-        height: 60px;
-        background: linear-gradient(to bottom, transparent, #d4af37);
-        animation: scroll 2s ease-in-out infinite;
-    }
-    
-    @keyframes scroll {
-        0%, 100% { opacity: 0; transform: translateX(-50%) translateY(0); }
-        50% { opacity: 1; transform: translateX(-50%) translateY(20px); }
-    }
-    
-    nav {
-        background: rgba(10, 10, 10, 0.95);
-        backdrop-filter: blur(10px);
-        padding: 1.5rem;
-        position: sticky;
-        top: 0;
-        z-index: 100;
-        border-bottom: 1px solid rgba(212, 175, 55, 0.2);
-    }
-    
-    nav ul {
-        list-style: none;
-        display: flex;
-        justify-content: center;
-        gap: 3rem;
-        flex-wrap: wrap;
-    }
-    
-    nav a {
-        text-decoration: none;
-        color: #d4af37;
-        font-weight: 300;
-        letter-spacing: 0.15em;
-        font-size: 1rem;
-        text-transform: uppercase;
-        transition: all 0.3s;
-        position: relative;
-    }
-    
-    nav a::after {
-        content: '';
-        position: absolute;
-        bottom: -5px;
-        left: 0;
-        width: 0;
-        height: 1px;
-        background: #d4af37;
-        transition: width 0.3s;
-    }
-    
-    nav a:hover::after {
-        width: 100%;
-    }
-    
-    nav a:hover {
-        color: #fff;
-    }
-    
-    .container {
-        max-width: 1400px;
-        margin: 0 auto;
-        padding: 5rem 2rem;
-        position: relative;
-        z-index: 2;
-    }
-    
-    section {
-        margin-bottom: 8rem;
-    }
-    
-    h2 {
-        color: #d4af37;
-        font-size: clamp(3rem, 6vw, 5rem);
-        margin-bottom: 3rem;
-        font-weight: 300;
-        letter-spacing: 0.1em;
-        text-transform: uppercase;
-        position: relative;
-        display: inline-block;
-    }
-    
-    h2::after {
-        content: '';
-        position: absolute;
-        bottom: -10px;
-        left: 0;
-        width: 60%;
-        height: 2px;
-        background: linear-gradient(to right, #d4af37, transparent);
-    }
-    
-    .section-intro {
-        color: #c0c0c0;
-        font-size: 1.3rem;
-        font-style: italic;
-        margin-bottom: 4rem;
-        max-width: 800px;
-        line-height: 2;
-    }
-    
-    .work-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-        gap: 3rem;
-        margin-top: 3rem;
-    }
-    
-    .work-item {
-        background: rgba(26, 26, 46, 0.4);
-        backdrop-filter: blur(10px);
-        border: 1px solid rgba(212, 175, 55, 0.2);
-        padding: 3rem;
-        transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-        position: relative;
-        overflow: hidden;
-    }
-    
-    .work-item::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: -100%;
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(90deg, transparent, rgba(212, 175, 55, 0.1), transparent);
-        transition: left 0.6s;
-    }
-    
-    .work-item:hover::before {
-        left: 100%;
-    }
-    
-    .work-item:hover {
-        transform: translateY(-10px);
-        border-color: #d4af37;
-        box-shadow: 0 20px 60px rgba(212, 175, 55, 0.3);
-    }
-    
-    .work-item h3 {
-        color: #fff;
-        font-size: 1.8rem;
-        margin-bottom: 1rem;
-        font-weight: 400;
-        letter-spacing: 0.05em;
-    }
-    
-    .work-item p {
-        color: #a8a8a8;
-        line-height: 1.9;
-        font-size: 1.1rem;
-    }
-
-    .work-item a {
-        color: #d4af37;
-        text-decoration: none;
-        transition: color 0.3s;
-    }
-
-    .work-item a:hover {
-        color: #fff;
-    }
-    
-    .poem-container {
-        max-width: 900px;
-        margin: 4rem auto;
-    }
-    
-    .poem {
-        background: rgba(212, 175, 55, 0.05);
-        border-left: 3px solid #d4af37;
-        padding: 4rem;
-        margin: 3rem 0;
-        font-style: italic;
-        color: #e0e0e0;
-        font-size: 1.4rem;
-        line-height: 2.2;
-        position: relative;
-    }
-    
-    .poem::before {
-        content: '"';
-        position: absolute;
-        top: 1rem;
-        left: 1rem;
-        font-size: 6rem;
-        color: rgba(212, 175, 55, 0.2);
-        font-family: Georgia, serif;
-    }
-
-    .poem-title {
-        color: #d4af37;
-        font-size: 2rem;
-        font-weight: 400;
-        margin-bottom: 2rem;
-        text-align: center;
-        font-style: normal;
-    }
-    
-    footer {
-        background: rgba(10, 10, 10, 0.95);
-        color: #a8a8a8;
-        text-align: center;
-        padding: 4rem 2rem;
-        border-top: 1px solid rgba(212, 175, 55, 0.2);
-        position: relative;
-        z-index: 2;
-    }
-    
-    .contact-section {
-        background: rgba(26, 26, 46, 0.3);
-        backdrop-filter: blur(10px);
-        padding: 6rem 4rem;
-        border: 1px solid rgba(212, 175, 55, 0.2);
-        text-align: center;
-    }
-    
-    .contact-links {
-        display: flex;
-        justify-content: center;
-        gap: 3rem;
-        margin-top: 3rem;
-        flex-wrap: wrap;
-    }
-    
-    .contact-links a {
-        color: #d4af37;
-        text-decoration: none;
-        font-weight: 300;
-        font-size: 1.2rem;
-        letter-spacing: 0.1em;
-        transition: all 0.3s;
-        padding: 1rem 2rem;
-        border: 1px solid rgba(212, 175, 55, 0.3);
-        text-transform: uppercase;
-    }
-    
-    .contact-links a:hover {
-        background: rgba(212, 175, 55, 0.1);
-        border-color: #d4af37;
-        color: #fff;
-        transform: translateY(-3px);
-        box-shadow: 0 10px 30px rgba(212, 175, 55, 0.3);
-    }
-    
-    /* Decorative elements */
-    .ornament {
-        width: 80px;
-        height: 2px;
-        background: linear-gradient(to right, transparent, #d4af37, transparent);
-        margin: 3rem auto;
-    }
-    
-    @media (max-width: 768px) {
+        
+        @keyframes gradientShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        
+        /* Grain texture overlay */
+        body::after {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="300" height="300"><filter id="noise"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="4" /></filter><rect width="100%" height="100%" filter="url(%23noise)" opacity="0.05"/></svg>');
+            pointer-events: none;
+            z-index: 1;
+            opacity: 0.4;
+        }
+        
+        header {
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 2rem;
+            z-index: 2;
+        }
+        
         header h1 {
+            font-size: clamp(4rem, 12vw, 8rem);
+            font-weight: 300;
+            letter-spacing: 0.3em;
+            color: #fff;
+            margin-bottom: 2rem;
+            text-transform: uppercase;
+            opacity: 0;
+            animation: fadeInUp 1.5s ease forwards;
+            text-shadow: 0 0 40px rgba(255,255,255,0.2);
+        }
+        
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+        }
+        
+        header p {
+            font-size: clamp(1.2rem, 3vw, 2rem);
+            color: #d4af37;
+            font-weight: 300;
             letter-spacing: 0.2em;
+            opacity: 0;
+            animation: fadeInUp 1.5s ease 0.5s forwards;
+        }
+        
+        .scroll-indicator {
+            position: absolute;
+            bottom: 3rem;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 2px;
+            height: 60px;
+            background: linear-gradient(to bottom, transparent, #d4af37);
+            animation: scroll 2s ease-in-out infinite;
+        }
+        
+        @keyframes scroll {
+            0%, 100% { opacity: 0; transform: translateX(-50%) translateY(0); }
+            50% { opacity: 1; transform: translateX(-50%) translateY(20px); }
+        }
+        
+        nav {
+            background: rgba(10, 10, 10, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 1.5rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            border-bottom: 1px solid rgba(212, 175, 55, 0.2);
         }
         
         nav ul {
-            gap: 1.5rem;
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            flex-wrap: wrap;
+        }
+        
+        nav a {
+            text-decoration: none;
+            color: #d4af37;
+            font-weight: 300;
+            letter-spacing: 0.15em;
+            font-size: 1rem;
+            text-transform: uppercase;
+            transition: all 0.3s;
+            position: relative;
+        }
+        
+        nav a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 1px;
+            background: #d4af37;
+            transition: width 0.3s;
+        }
+        
+        nav a:hover::after {
+            width: 100%;
+        }
+        
+        nav a:hover {
+            color: #fff;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 5rem 2rem;
+            position: relative;
+            z-index: 2;
+        }
+        
+        section {
+            margin-bottom: 8rem;
+        }
+        
+        h2 {
+            color: #d4af37;
+            font-size: clamp(3rem, 6vw, 5rem);
+            margin-bottom: 3rem;
+            font-weight: 300;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            position: relative;
+            display: inline-block;
+        }
+        
+        h2::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 60%;
+            height: 2px;
+            background: linear-gradient(to right, #d4af37, transparent);
+        }
+        
+        .section-intro {
+            color: #c0c0c0;
+            font-size: 1.3rem;
+            font-style: italic;
+            margin-bottom: 4rem;
+            max-width: 800px;
+            line-height: 2;
         }
         
         .work-grid {
-            grid-template-columns: 1fr;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 3rem;
+            margin-top: 3rem;
         }
         
-        .work-item,
-        .contact-section {
-            padding: 2rem;
+        .work-item {
+            background: rgba(26, 26, 46, 0.4);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            padding: 3rem;
+            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .work-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(212, 175, 55, 0.1), transparent);
+            transition: left 0.6s;
+        }
+        
+        .work-item:hover::before {
+            left: 100%;
+        }
+        
+        .work-item:hover {
+            transform: translateY(-10px);
+            border-color: #d4af37;
+            box-shadow: 0 20px 60px rgba(212, 175, 55, 0.3);
+        }
+        
+        .work-item h3 {
+            color: #fff;
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            font-weight: 400;
+            letter-spacing: 0.05em;
+        }
+        
+        .work-item p {
+            color: #a8a8a8;
+            line-height: 1.9;
+            font-size: 1.1rem;
+        }
+
+        .work-item a {
+            color: #d4af37;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .work-item a:hover {
+            color: #fff;
+        }
+        
+        .poem-container {
+            max-width: 900px;
+            margin: 4rem auto;
         }
         
         .poem {
-            padding: 2rem;
-            font-size: 1.2rem;
+            background: rgba(212, 175, 55, 0.05);
+            border-left: 3px solid #d4af37;
+            padding: 4rem;
+            margin: 3rem 0;
+            font-style: italic;
+            color: #e0e0e0;
+            font-size: 1.4rem;
+            line-height: 2.2;
+            position: relative;
         }
-    }
-</style>
-```
+        
+        .poem::before {
+            content: '"';
+            position: absolute;
+            top: 1rem;
+            left: 1rem;
+            font-size: 6rem;
+            color: rgba(212, 175, 55, 0.2);
+            font-family: Georgia, serif;
+        }
 
+        .poem-title {
+            color: #d4af37;
+            font-size: 2rem;
+            font-weight: 400;
+            margin-bottom: 2rem;
+            text-align: center;
+            font-style: normal;
+        }
+        
+        footer {
+            background: rgba(10, 10, 10, 0.95);
+            color: #a8a8a8;
+            text-align: center;
+            padding: 4rem 2rem;
+            border-top: 1px solid rgba(212, 175, 55, 0.2);
+            position: relative;
+            z-index: 2;
+        }
+        
+        .contact-section {
+            background: rgba(26, 26, 46, 0.3);
+            backdrop-filter: blur(10px);
+            padding: 6rem 4rem;
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            text-align: center;
+        }
+        
+        .contact-links {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            margin-top: 3rem;
+            flex-wrap: wrap;
+        }
+        
+        .contact-links a {
+            color: #d4af37;
+            text-decoration: none;
+            font-weight: 300;
+            font-size: 1.2rem;
+            letter-spacing: 0.1em;
+            transition: all 0.3s;
+            padding: 1rem 2rem;
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            text-transform: uppercase;
+        }
+        
+        .contact-links a:hover {
+            background: rgba(212, 175, 55, 0.1);
+            border-color: #d4af37;
+            color: #fff;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(212, 175, 55, 0.3);
+        }
+        
+        /* Decorative elements */
+        .ornament {
+            width: 80px;
+            height: 2px;
+            background: linear-gradient(to right, transparent, #d4af37, transparent);
+            margin: 3rem auto;
+        }
+        
+        @media (max-width: 768px) {
+            header h1 {
+                letter-spacing: 0.2em;
+            }
+            
+            nav ul {
+                gap: 1.5rem;
+            }
+            
+            .work-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .work-item,
+            .contact-section {
+                padding: 2rem;
+            }
+            
+            .poem {
+                padding: 2rem;
+                font-size: 1.2rem;
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -390,172 +451,170 @@
         <p>Writer • Filmmaker • Poet</p>
         <div class="scroll-indicator"></div>
     </header>
-
-```
-<nav>
-    <ul>
-        <li><a href="#book">Book</a></li>
-        <li><a href="#poetry">Poetry</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
-</nav>
-
-<div class="container">
-    <section id="book">
-        <h2>Published Work</h2>
-        <div class="ornament"></div>
-        <p class="section-intro">Exploring love, heartbreak, identity, and the human condition through powerful verse that captures both vulnerability and strength.</p>
-        
-        <div class="work-grid">
-            <div class="work-item">
-                <h3>A Thin Line Between Love & Feeling Played</h3>
-                <p>Kevin Grant's debut poetry collection explores the vast and beautiful depth of emotionally navigating life and love, capturing a genuine portrayal of pain, grief, facing crossroads and navigating life transitions, battling survival, tragedy, and uncertainty yet persevering with grit and newfound wisdom from heartbreak.</p>
-                <p style="margin-top: 1.5rem;">This book contains meaningful and beautiful poetry addressing jealousy, miscommunication, cultural commentary, and the joy of vulnerability. Grant's New Orleans roots shine through with soulful depth—a powerful expression of the soul's true authenticity.</p>
-                <p style="margin-top: 1.5rem;"><a href="https://www.amazon.com/Thin-Line-Between-Feeling-Played/dp/B0DT15V98Y/" target="_blank">Available on Amazon →</a></p>
-            </div>
-        </div>
-    </section>
     
-    <section id="poetry">
-        <h2>Featured Poems</h2>
-        <div class="ornament"></div>
-        <p class="section-intro">Selected works from "A Thin Line Between Love & Feeling Played" — verses that speak truth in rhythm and metaphor.</p>
-        
-        <div class="poem-container">
-            <div class="poem">
-                <div class="poem-title">Do I, Too, Sing America</div>
-                <p style="margin-top: 2rem; font-style: normal;">
-                    I AM<br>
-                    The big black brother.<br>
-                    cross the street when under lit under streetlights.<br>
-                    CCTV every move I make.<br><br>
-
-                    Monitoring mistook steps to paint a portrait of<br>
-                    Habitual mistakes.<br>
-                    Could you articulate?<br><br>
-
-                    Diction be damned, I keep appearances proper and prim. I stay clean.<br>
-                    Internal conflict makes for external chaos.<br>
-                    Whether serving the country or serving fools.<br><br>
-
-                    Shit talking, and real regardless of the observers.<br>
-                    Which mask today, no need to speculate<br>
-                    -- I assimilate.<br><br>
-
-                    I laugh,<br>
-                    the tears are mistaken for joy.<br><br>
-
-                    Do I, too, sing America?<br><br>
-
-                    Tomorrow is still a day away, I sit at the table, Mr. Hughes, because we make the table.<br>
-                    No one dares tell me, "Eat in the kitchen" now, not to my face.<br><br>
-
-                    Oh baby, but behind my back?<br>
-                    Passive-aggressively questioning, or bypassing me over by overlooking my character,<br>
-                    Have me second-guessing my worth?<br>
-                    All by design.<br><br>
-
-                    what you speak, and your actions never align.<br><br>
-
-                    Do I, too, sing America?<br><br>
-
-                    Where so many have died to help build a dream and died for change.<br>
-                    Sacrificial lambs,<br>
-                    who look just like me, and you.<br><br>
-
-                    For causes greater than us all, but somewhere those legends get lost.<br>
-                    When wars are made, or my help is needed you want me to sing America?<br>
-                    And yet when I need help where is America?<br><br>
-
-                    See how beautiful I am,<br>
-                    See how brilliant I am.<br>
-                    I don't need you to tell me if I sing America because I do<br>
-                    No matter how many of us are slaughtered,<br>
-                    The lives forever meaningful.<br><br>
-
-                    One day you will see,<br>
-                    That I too sing America, because America is me.
-                </p>
-            </div>
-
-            <div class="poem">
-                <div class="poem-title">Look Away</div>
-                <p style="margin-top: 2rem; font-style: normal;">
-                    Everything is in her smile,<br>
-                    My meditations amid the chaotic days bring me there.<br><br>
-
-                    With her full embrace, I hesitate to let go—trying to freeze time and her love all at once.<br>
-                    Fully aware that in moments, we will no longer be who we just were,<br>
-                    Barred from a return there.<br><br>
-
-                    She's gone, so I long to be with her again—hoping that each detached moment grows our love and extends our time.<br><br>
-
-                    Fully aware of that inevitable silence that whisks us away,<br>
-                    Shall the rider of the pale horse remark at a love so beautiful that it is forever impressed<br>
-                    in time, to forever speak—for us,<br>
-                    even without us.
-                </p>
-            </div>
-
-            <div class="poem">
-                <div class="poem-title">Before</div>
-                <p style="margin-top: 2rem; font-style: normal;">
-                    Who were you?<br>
-                    Before the sun stooped down to kiss the ocean,<br>
-                    Giving birth to nights and days,<br>
-                    her pure eyes open to see love for the first time,<br><br>
-
-                    traversing canals through multiple dimensions, and lifetimes<br>
-                    only to emerge in a world with broken wings,<br>
-                    overrun with realness.<br><br>
-
-                    So real that everyone else is phony, yet before this— this —<br>
-                    reality,<br>
-                    in actuality,<br>
-                    lost in a forgotten nook behind my soul,<br><br>
-
-                    I remember you,<br>
-                    the way that you were;<br>
-                    before.<br><br>
-
-                    When you first fell from the sky.
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <section id="about">
-        <h2>About</h2>
-        <div class="ornament"></div>
-        
-        <div style="display: flex; gap: 4rem; align-items: center; flex-wrap: wrap; margin-top: 3rem;">
-            <div style="flex: 0 0 300px;">
-                <img src="headshot.png" alt="Kevin C. Grant" style="width: 100%; border-radius: 10px; border: 2px solid rgba(212, 175, 55, 0.3); box-shadow: 0 10px 40px rgba(212, 175, 55, 0.2);">
-            </div>
-            <div style="flex: 1; min-width: 300px;">
-                <p class="section-intro" style="margin-bottom: 0;">Kevin C. Grant is a writer, filmmaker, and poet from New Orleans, now based in Los Angeles. His work explores themes of love, identity, cultural commentary, and the human experience through powerful, honest verse. His debut poetry collection "A Thin Line Between Love & Feeling Played" captures the depth and complexity of navigating life, loss, and the search for meaning.</p>
-            </div>
-        </div>
-    </section>
+    <nav>
+        <ul>
+            <li><a href="#book">Book</a></li>
+            <li><a href="#poetry">Poetry</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
     
-    <section id="contact">
-        <div class="contact-section">
-            <h2>Get in Touch</h2>
+    <div class="container">
+        <section id="book">
+            <h2>Published Work</h2>
             <div class="ornament"></div>
-            <p class="section-intro">Connect with me for collaborations, conversations, and creative opportunities.</p>
+            <p class="section-intro">Exploring love, heartbreak, identity, and the human condition through powerful verse that captures both vulnerability and strength.</p>
             
-            <div class="contact-links">
-                <a href="/cdn-cgi/l/email-protection#8cc7e9fae5e2efe4fee5fff8e3fce4e9febdbacce5efe0e3f9e8a2efe3e1">Email</a>
-                <a href="https://www.instagram.com/koolhandgrantwrites" target="_blank">Instagram</a>
-                <a href="https://www.tiktok.com/@kevin.c.grant" target="_blank">TikTok</a>
-                <a href="https://www.amazon.com/Thin-Line-Between-Feeling-Played/dp/B0DT15V98Y/" target="_blank">Amazon</a>
+            <div class="work-grid">
+                <div class="work-item">
+                    <h3>A Thin Line Between Love & Feeling Played</h3>
+                    <p>Kevin Grant's debut poetry collection explores the vast and beautiful depth of emotionally navigating life and love, capturing a genuine portrayal of pain, grief, facing crossroads and navigating life transitions, battling survival, tragedy, and uncertainty yet persevering with grit and newfound wisdom from heartbreak.</p>
+                    <p style="margin-top: 1.5rem;">This book contains meaningful and beautiful poetry addressing jealousy, miscommunication, cultural commentary, and the joy of vulnerability. Grant's New Orleans roots shine through with soulful depth—a powerful expression of the soul's true authenticity.</p>
+                    <p style="margin-top: 1.5rem;"><a href="https://www.amazon.com/Thin-Line-Between-Feeling-Played/dp/B0DT15V98Y/" target="_blank">Available on Amazon →</a></p>
+                </div>
             </div>
-        </div>
-    </section>
-</div>
+        </section>
+        
+        <section id="poetry">
+            <h2>Featured Poems</h2>
+            <div class="ornament"></div>
+            <p class="section-intro">Selected works from "A Thin Line Between Love & Feeling Played" — verses that speak truth in rhythm and metaphor.</p>
+            
+            <div class="poem-container">
+                <div class="poem">
+                    <div class="poem-title">Do I, Too, Sing America</div>
+                    <p style="margin-top: 2rem; font-style: normal;">
+                        I AM<br>
+                        The big black brother.<br>
+                        cross the street when under lit under streetlights.<br>
+                        CCTV every move I make.<br><br>
 
-<footer>
-    <p>&copy; 2026 Kevin C. Grant. All rights reserved.</p>
-    <p style="margin-top: 1rem; font-size: 0.9rem; opacity: 0.6;">New Orleans roots, L
-```
+                        Monitoring mistook steps to paint a portrait of<br>
+                        Habitual mistakes.<br>
+                        Could you articulate?<br><br>
+
+                        Diction be damned, I keep appearances proper and prim. I stay clean.<br>
+                        Internal conflict makes for external chaos.<br>
+                        Whether serving the country or serving fools.<br><br>
+
+                        Shit talking, and real regardless of the observers.<br>
+                        Which mask today, no need to speculate<br>
+                        -- I assimilate.<br><br>
+
+                        I laugh,<br>
+                        the tears are mistaken for joy.<br><br>
+
+                        Do I, too, sing America?<br><br>
+
+                        Tomorrow is still a day away, I sit at the table, Mr. Hughes, because we make the table.<br>
+                        No one dares tell me, "Eat in the kitchen" now, not to my face.<br><br>
+
+                        Oh baby, but behind my back?<br>
+                        Passive-aggressively questioning, or bypassing me over by overlooking my character,<br>
+                        Have me second-guessing my worth?<br>
+                        All by design.<br><br>
+
+                        what you speak, and your actions never align.<br><br>
+
+                        Do I, too, sing America?<br><br>
+
+                        Where so many have died to help build a dream and died for change.<br>
+                        Sacrificial lambs,<br>
+                        who look just like me, and you.<br><br>
+
+                        For causes greater than us all, but somewhere those legends get lost.<br>
+                        When wars are made, or my help is needed you want me to sing America?<br>
+                        And yet when I need help where is America?<br><br>
+
+                        See how beautiful I am,<br>
+                        See how brilliant I am.<br>
+                        I don't need you to tell me if I sing America because I do<br>
+                        No matter how many of us are slaughtered,<br>
+                        The lives forever meaningful.<br><br>
+
+                        One day you will see,<br>
+                        That I too sing America, because America is me.
+                    </p>
+                </div>
+
+                <div class="poem">
+                    <div class="poem-title">Look Away</div>
+                    <p style="margin-top: 2rem; font-style: normal;">
+                        Everything is in her smile,<br>
+                        My meditations amid the chaotic days bring me there.<br><br>
+
+                        With her full embrace, I hesitate to let go—trying to freeze time and her love all at once.<br>
+                        Fully aware that in moments, we will no longer be who we just were,<br>
+                        Barred from a return there.<br><br>
+
+                        She's gone, so I long to be with her again—hoping that each detached moment grows our love and extends our time.<br><br>
+
+                        Fully aware of that inevitable silence that whisks us away,<br>
+                        Shall the rider of the pale horse remark at a love so beautiful that it is forever impressed<br>
+                        in time, to forever speak—for us,<br>
+                        even without us.
+                    </p>
+                </div>
+
+                <div class="poem">
+                    <div class="poem-title">Before</div>
+                    <p style="margin-top: 2rem; font-style: normal;">
+                        Who were you?<br>
+                        Before the sun stooped down to kiss the ocean,<br>
+                        Giving birth to nights and days,<br>
+                        her pure eyes open to see love for the first time,<br><br>
+
+                        traversing canals through multiple dimensions, and lifetimes<br>
+                        only to emerge in a world with broken wings,<br>
+                        overrun with realness.<br><br>
+
+                        So real that everyone else is phony, yet before this— this —<br>
+                        reality,<br>
+                        in actuality,<br>
+                        lost in a forgotten nook behind my soul,<br><br>
+
+                        I remember you,<br>
+                        the way that you were;<br>
+                        before.<br><br>
+
+                        When you first fell from the sky.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <h2>About</h2>
+            <div class="ornament"></div>
+            
+            <div style="display: flex; gap: 4rem; align-items: center; flex-wrap: wrap; margin-top: 3rem;">
+                <div style="flex: 0 0 300px;">
+                    <img src="headshot.png" alt="Kevin C. Grant" style="width: 100%; border-radius: 10px; border: 2px solid rgba(212, 175, 55, 0.3); box-shadow: 0 10px 40px rgba(212, 175, 55, 0.2);">
+                </div>
+                <div style="flex: 1; min-width: 300px;">
+                    <p class="section-intro" style="margin-bottom: 0;">Kevin C. Grant is a writer, filmmaker, and poet from New Orleans, now based in Los Angeles. His work explores themes of love, identity, cultural commentary, and the human experience through powerful, honest verse. His debut poetry collection "A Thin Line Between Love & Feeling Played" captures the depth and complexity of navigating life, loss, and the search for meaning.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="contact">
+            <div class="contact-section">
+                <h2>Get in Touch</h2>
+                <div class="ornament"></div>
+                <p class="section-intro">Connect with me for collaborations, conversations, and creative opportunities.</p>
+                
+                <div class="contact-links">
+                    <a href="/cdn-cgi/l/email-protection#8cc7e9fae5e2efe4fee5fff8e3fce4e9febdbacce5efe0e3f9e8a2efe3e1">Email</a>
+                    <a href="https://www.instagram.com/koolhandgrantwrites" target="_blank">Instagram</a>
+                    <a href="https://www.tiktok.com/@kevin.c.grant" target="_blank">TikTok</a>
+                    <a href="https://www.amazon.com/Thin-Line-Between-Feeling-Played/dp/B0DT15V98Y/" target="_blank">Amazon</a>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <footer>
+        <p>&copy; 2026 Kevin C. Grant. All rights reserved.</p>
+        <p style="margin-top: 1rem; font-size: 0.9rem; opacity: 0.6;">New Orleans roots, L
